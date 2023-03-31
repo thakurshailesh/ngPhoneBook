@@ -1,1 +1,5 @@
-<p>edit-contact works!</p>
+<div class="container">
+    <h2>Edit Contact</h2>
+    <!-- Get form data in variable OnContactEvent from contact-form-component and pass this data to addContact function of ContactService -->
+    <app-contact-form *ngIf="model" [model]="model" (OnContactEvent)="saveChanges($event)"></app-contact-form>
+</div>

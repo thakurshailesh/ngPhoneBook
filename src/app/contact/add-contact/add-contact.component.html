@@ -1,1 +1,5 @@
-<p>add-contact works!</p>
+<div class="container">
+    <h2>Add Contact</h2>
+    <!-- Get form data from contact-form-component and pass this data to addContact function of ContactService -->
+    <app-contact-form (OnContactEvent)="saveChanges($event)"></app-contact-form>
+</div>
