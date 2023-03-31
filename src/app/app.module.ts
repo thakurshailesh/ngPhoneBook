@@ -6,9 +6,9 @@ import { HomeComponent } from './home/home.component';
 import { AddContactComponent } from './contact/add-contact/add-contact.component';
 import { EditContactComponent } from './contact/edit-contact/edit-contact.component';
 import { ListContactComponent } from './contact/list-contact/list-contact.component';
-import { Routes } from '@angular/router';
+import { Routes, RouterModule } from '@angular/router';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { RouterModule } from '@angular/router'
+import { HttpClientModule } from '@angular/common/http';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -28,6 +28,7 @@ const routes: Routes = [
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     NgbModule,
     RouterModule.forRoot(routes)
   ],

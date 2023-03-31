@@ -1,0 +1,24 @@
+{
+  "contacts": [
+    {
+      "id": 1,
+      "name": "Shailesh",
+      "contactNumber": 9582711500
+    },
+    {
+      "id": 2,
+      "name": "Suresh",
+      "contactNumber": 9582711502
+    },
+    {
+      "id": 3,
+      "name": "Shyam",
+      "contactNumber": 9582711503
+    },
+    {
+      "id": 4,
+      "name": "Sonu",
+      "contactNumber": 9582711504
+    }
+  ]
+}
