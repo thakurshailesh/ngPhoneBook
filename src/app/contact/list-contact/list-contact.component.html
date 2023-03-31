@@ -1,3 +1,25 @@
 <div class="container">
     <h2>Your Contacts</h2>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Name</th>
+                <th scope="col">Contact Number</th>
+                <th scope="col">Modify</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let contact of contacts">
+
+                <td>{{contact?.id}}</td>
+                <td>{{contact?.name}}</td>
+                <td>{{contact?.contactNumber}}</td>
+                <td>
+                    <button>Edit</button>
+                    <button>Delete</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
 </div>
