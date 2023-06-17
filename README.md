@@ -22,6 +22,12 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
+
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Start json server
+npm install -g json-server
+json-server --watch db.json
+ for more details on json-server refer below link [JsonServer](https://www.npmjs.com/package/json-server) page.
