@@ -9,6 +9,8 @@ import { ListContactComponent } from './contact/list-contact/list-contact.compon
 import { Routes, RouterModule } from '@angular/router';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HttpClientModule } from '@angular/common/http';
+import { ContactFormComponent } from './contact/contact-form/contact-form.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -24,13 +26,16 @@ const routes: Routes = [
     HomeComponent,
     AddContactComponent,
     EditContactComponent,
-    ListContactComponent
+    ListContactComponent,
+    ContactFormComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     NgbModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    ReactiveFormsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

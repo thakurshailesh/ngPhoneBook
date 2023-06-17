@@ -9,13 +9,13 @@ import { Contact } from '../contact.model';
 })
 export class ListContactComponent implements OnInit {
 
-  contacts : Contact [];
-  constructor(private contactService: ContactService) { 
+  contacts: Contact[];
+  constructor(private contactService: ContactService) {
     this.contacts = [];
   }
 
-  loadContacts(){
-    this.contactService.getAllContacts().subscribe((contactList: Contact[])=>{
+  loadContacts() {
+    this.contactService.getAllContacts().subscribe((contactList: Contact[]) => {
       this.contacts = contactList;
     });
   }
@@ -23,4 +23,12 @@ export class ListContactComponent implements OnInit {
     this.loadContacts();
   }
 
+  deleteContact(id: number) {
+    this.contactService.deleteContact(id).subscribe(() => {
+      alert('Record Deleted');
+      this.loadContacts();
+    }, (err) => {
+      console.log(err);
+    });
+  }
 }
